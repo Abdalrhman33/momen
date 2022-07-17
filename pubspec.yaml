@@ -76,27 +76,27 @@ flutter:
   fonts:
     - family: Roboto
       fonts:
-        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assest/fonts/Roboto-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assest/fonts/Roboto-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assest/fonts/Roboto-Light.ttf
           weight: 300
-        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assest/fonts/Roboto-Medium.ttf
           weight: 500
     - family: Yanone Kaffeesatz
       fonts:
-        - asset: assets/fonts/YanoneKaffeesatz-Bold.ttf
+        - asset: assest/fonts/YanoneKaffeesatz-Bold.ttf
           weight: 700
-        - asset: assets/fonts/YanoneKaffeesatz-Light.ttf
+        - asset: assest/fonts/YanoneKaffeesatz-Light.ttf
           weight: 300
-        - asset: assets/fonts/YanoneKaffeesatz-Medium.ttf
+        - asset: assest/fonts/YanoneKaffeesatz-Medium.ttf
           weight: 500
-        - asset: assets/fonts/YanoneKaffeesatz-Regular.ttf
+        - asset: assest/fonts/YanoneKaffeesatz-Regular.ttf
           weight: 400
-    - family: Yanone Kaffeesatz
+    - family: Raleway
       fonts:
-        - asset: assets/fonts/Raleway-SemiBoldItalic.ttf
+        - asset: assest/fonts/Raleway-SemiBoldItalic.ttf
           weight: 600
           style: italic
   # For details regarding fonts from package dependencies,

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         //backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: const Text("Welcome"),
+          title: const Text("Welcome", style: TextStyle(fontFamily: "Raleway") ),
           backgroundColor: Colors.blue,
           elevation: 3,
           //centerTitle: true,
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           //       child: const Icon(
           //           Icons.arrow_back)),
           leading: IconButton(
-            onPressed: ()=> print("BACK BUTTON PRESED"),
+            onPressed: ()=> ("BACK BUTTON PRESED"),
             //iconSize: 30,
             icon: const Icon(
               Icons.menu,
@@ -34,19 +34,43 @@ class MyApp extends StatelessWidget {
             ),
             //color: Colors.black,
           ),
-          actions: [IconButton(onPressed: ()=> print("Serch"), icon: Icon(Icons.search)),
-                    IconButton(onPressed: ()=> print("ADD"), icon: Icon(Icons.add))
+          actions: [IconButton(onPressed: ()=> ("Serch"), icon: const Icon(Icons.search)),
+                    IconButton(onPressed: ()=> ("ADD"), icon: const Icon(Icons.add))
           ],
         ),
-        body: const SafeArea(
-          child: Center(
-            child: Text(
-              "Welcome in Flutter Course",
-              style: TextStyle(fontSize: 25, color: Colors.blue, fontFamily: "Roboto", fontWeight: FontWeight.bold),
+        body:Column(
+          children: [
+            Text('gdfgdfgdf'),
+            Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.red,
+                  image: DecorationImage(image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png'))
+              ),
             ),
-          ),
+          ],
         ),
+        // Column(
+        //   children: [
+        //     Image(
+        //       image: NetworkImage("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg"),
+        //     ),
+        //   ],
+        // ),
+        // body:  Container(
+        //     width: 300,
+        //     height: 300,
+        //     child: Image.network("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg")),
       ),
     );
   }
 }
+
+
+// const Center(
+// child:  Text(
+// "Welcome in Flutter Course",
+// style: TextStyle(fontSize: 25, color: Colors.blue, fontFamily: "Roboto", fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+// ),
+// ),
