@@ -38,27 +38,37 @@ class MyApp extends StatelessWidget {
                     IconButton(onPressed: ()=> ("ADD"), icon: const Icon(Icons.add))
           ],
         ),
-        body:Column(
-          children: [
-            Text('gdfgdfgdf'),
-            Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                  image: DecorationImage(image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png'))
-              ),
-            ),
-          ],
-        ),
-        // Column(
+        // body:Column(
         //   children: [
-        //     Image(
-        //       image: NetworkImage("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg"),
+        //     Text('gdfgdfgdf'),
+        //     Container(
+        //       width: 200,
+        //       height: 200,
+        //       decoration: BoxDecoration(
+        //         color: Colors.red,
+        //           image: DecorationImage(image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png'))
+        //       ),
         //     ),
         //   ],
         // ),
-        // body:  Container(
+        // Column(
+        //   children: [
+            body: Container(
+              color: Colors.red,
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.topCenter,  //بتحكم بالموقع مع الحافظ على الحجم الـصلي للصورة
+              child: const Image(
+                width: 300,
+               // alignment: Alignment.topCenter, // بتحكم بالموقع أعلى وأسفل فقط.. ما بحافظ على الحجم الاصلي.. بحافظ فقط على الارتفاع // لو كان في عرض داخل الابن يتم تفعيله
+                //fit: BoxFit.cover,
+                 image: NetworkImage("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg"),
+               ),
+            ),
+        //   ],
+        // ),
+         //body: Image.network("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg"),
+        // Container(
         //     width: 300,
         //     height: 300,
         //     child: Image.network("https://cdn.britannica.com/92/177992-050-AED0DC28/Dome-of-the-Rock-Temple-Mount-Jerusalem.jpg")),
