@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
           child: Center(
             child: Text(
               "Welcome in Flutter Course",
-              style: TextStyle(fontSize: 25, color: Colors.blue),
+              style: TextStyle(fontSize: 25, color: Colors.blue, fontFamily: "Roboto", fontWeight: FontWeight.bold),
             ),
           ),
         ),
