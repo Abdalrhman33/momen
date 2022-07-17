@@ -25,16 +25,18 @@ class MyApp extends StatelessWidget {
           //       child: const Icon(
           //           Icons.arrow_back)),
           leading: IconButton(
-            onPressed: () {
-              print("BACK BUTTON PRESED");
-            },
+            onPressed: ()=> print("BACK BUTTON PRESED"),
             //iconSize: 30,
             icon: const Icon(
-              Icons.arrow_back,
+              Icons.menu,
+              //Icons.arrow_back,
               size: 30,
             ),
             //color: Colors.black,
           ),
+          actions: [IconButton(onPressed: ()=> print("Serch"), icon: Icon(Icons.search)),
+                    IconButton(onPressed: ()=> print("ADD"), icon: Icon(Icons.add))
+          ],
         ),
         body: const SafeArea(
           child: Center(
