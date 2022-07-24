@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'Column.dart';
 import 'lect7.dart';
+import 'simple_app.dart';
+import 'stack.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,7 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FirstScreen();
+    return MaterialApp(
+        home:  SimpleApp());
   }
 }
 

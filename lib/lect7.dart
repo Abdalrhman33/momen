@@ -10,7 +10,7 @@ class FirstScreen extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red,
-          elevation: 7,
+          elevation: 5,
           centerTitle: true,
           title: const Text("Welcome"),
           leading: IconButton(
@@ -21,7 +21,7 @@ class FirstScreen extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(width: double.infinity,),
             Container(
