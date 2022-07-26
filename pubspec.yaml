@@ -99,5 +99,11 @@ flutter:
         - asset: assest/fonts/Raleway-SemiBoldItalic.ttf
           weight: 600
           style: italic
+
+    - family: Tajawal
+      fonts:
+        - asset: assest/fonts/Tajawal-Bold.ttf
+        - asset: assest/fonts/Tajawal-Regular.ttf
+          weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

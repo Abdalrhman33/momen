@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'Column.dart';
+import 'launch_screen.dart';
 import 'lect7.dart';
 import 'simple_app.dart';
 import 'stack.dart';
+import 'subhaapp.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,7 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home:  SimpleApp());
+       // home:  LaunchScreen());
+        initialRoute: '/lunch_screen',
+        routes: {
+           '/lunch_screen': (context) => const LaunchScreen(),
+          '/main_screen': (context) => const MainScrenn()
+        },
+    );
   }
 }
 

@@ -37,34 +37,46 @@ class SimpleApp extends StatelessWidget {
               thickness: 1.5,
               height: 50,
             ),
-            ListTile(
-              tileColor: Colors.white,
-              leading: Icon(Icons.email),
-              title: Text("Email Adress"),
-              subtitle: Text("aalrhman080@gmail.com"),
-              trailing: Icon(Icons.arrow_forward),
-              onTap: (){
-                print("Email Adress");
-              },
+            Card(
+              elevation: 10,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20)
+                borderRadius: BorderRadius.circular(10)
+              ),
+              child: ListTile(
+                tileColor: Colors.white,
+                leading: Icon(Icons.email),
+                title: Text("Email Adress"),
+                subtitle: Text("aalrhman080@gmail.com"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: (){
+                  print("Email Adress");
+                },
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)
+                ),
               ),
             ),
             SizedBox(
               height: 20,
               width: double.infinity,
             ),
-            ListTile(
-              tileColor: Colors.white,
-              leading: Icon(Icons.phone_android),
-              title: Text("Mobile Number"),
-              subtitle: Text("+970592426177"),
-              trailing: Icon(Icons.phone),
-              onTap: (){
-                print("Email Adress");
-              },
+            Card(
+              elevation: 10,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)
+                borderRadius: BorderRadius.circular(10) 
+              ),
+              child: ListTile(
+                tileColor: Colors.white,
+                leading: Icon(Icons.phone_android),
+                title: Text("Mobile Number"),
+                subtitle: Text("+970592426177"),
+                trailing: Icon(Icons.phone),
+                onTap: (){
+                  print("Email Adress");
+                },
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)
+                ),
               ),
             ),
             Spacer(),
